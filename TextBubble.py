@@ -228,7 +228,7 @@ def DrawTextBubble(textbubletext,filename="bubble.png",transmition="sender"):
         TXTimg = TXTimg.resize(BGimg.size, Image.LANCZOS)
 
     result = Image.alpha_composite(BGimg, TXTimg)
-    result.save("output.png")
+    result.save(filename)
     result.show()
     BGimg.close()
     TXTimg.close()
